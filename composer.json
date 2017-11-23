@@ -12,7 +12,10 @@
   "require": {},
   "autoload": {
     "psr-4": {
-      "artecfeng\\utils\\": "[src]"
+      "artecfeng\\utils\\": ["src/"]
     }
+  },
+  "autoload-dev": {
+    "psr-4": {"artecfeng\\utils\\": ["src/"]}
   }
 }

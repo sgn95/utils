@@ -6,7 +6,7 @@
      * Time: 15:23
      */
 
-    namespace artecfeng\Utils\util;
+    namespace artecfeng\utils\util;
 
 
     class Tool {
