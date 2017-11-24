@@ -25,9 +25,24 @@
         }
 
         /**
+         * @param $code
+         * @param $data
+         * @param $msg
+         *
+         * @return array
+         */
+        public function echoJson ($code, $data, $msg) {
+            return [
+                'code' => $code,
+                'data' => $data,
+                'msg'  => $msg
+            ];
+        }
+
+        /**
          * @return 获取用户真实IP
          */
-        function getIp () {
+        public function getIp () {
             if (getenv( "HTTP_CLIENT_IP" ) && strcasecmp( getenv( "HTTP_CLIENT_IP" ), "unknown" )) {
                 $ip = getenv( "HTTP_CLIENT_IP" );
             } else {
